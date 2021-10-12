@@ -1,4 +1,6 @@
+/* selector */
 article p:first-of-type {
+  /* "declaration" line, color is the "property", red the the "value"*/
   color: red;
   font-size: 1.5em;
 }
