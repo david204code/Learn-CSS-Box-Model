@@ -1,0 +1,4 @@
+/* This CSS is declared before the <link>, so is less specific. */
+.button {
+  background: #ff00ff;
+}
