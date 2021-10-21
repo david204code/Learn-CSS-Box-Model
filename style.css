@@ -1,5 +1,25 @@
-h1,
-p,
-.wrapper {
-  color: green;
+.top div {
+  padding-left: 2em;
+}
+
+.top p {
+  background: #fff;
+  padding: 0.5em;
+}
+
+/* Presentational styles */
+.top div {
+  background: pink;
+  border-top: 1px solid green;
+  border-left: 1px solid green;
+}
+
+.top > div {
+  border-bottom: 1px solid green;
+  border-right: 1px solid green;
+}
+
+.top p {
+  text-align: left;
+  border-left: 1px solid green;
 }
