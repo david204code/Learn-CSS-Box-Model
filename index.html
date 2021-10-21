@@ -12,23 +12,27 @@
     <main>
       <div class="wrapper">
         <article class="flow">
-          <h1>Next sibling selector</h1>
+          <h1>Custom toggle</h1>
           <figure class="callout">
             <p>
-              The <strong>next sibling selector</strong> allows us to only add
-              margin to siblings that follow each other.
+              We can use a <strong>subsequent selector</strong> along with a
+              `<code>:checked</code>` pseudo class to create a pure CSS switch
+              element.
             </p>
           </figure>
-          <div class="top box">
-            <p>I have no margin because I am the first child.</p>
-            <p>
-              I have <code>margin-top</code> because I am a
-              <strong>next sibling</strong>.
-            </p>
-            <p>
-              I am also a <strong>next sibling</strong>, so also get margin top.
-            </p>
-          </div>
+
+          <label class="toggle" for="toggle-element">
+            <span class="toggle__label">Our custom toggle switch</span>
+            <input
+              type="checkbox"
+              role="switch"
+              class="toggle__element"
+              id="toggle-element"
+            />
+            <div class="toggle__decor" aria-hidden="true">
+              <div class="toggle__thumb"></div>
+            </div>
+          </label>
         </article>
       </div>
     </main>
