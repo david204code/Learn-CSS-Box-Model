@@ -5,3 +5,9 @@ button {
 .branding {
   color: blue;
 }
+
+/* Visualizing specificity (#id), (.my-class[class]:hover), (div ::selection) */
+/* score of 0-4-1 */
+a.my-class.another-class[href]:hover {
+  color: lightgrey;
+}
