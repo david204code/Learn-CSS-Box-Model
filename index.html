@@ -9,12 +9,20 @@
   </head>
 
   <body>
-    <!-- This link element is declared after the CSS in the editor so will be more specific -->
-    <link
-      rel="stylesheet"
-      href="https://codepen.io/web-dot-dev/pen/abpoXGZ.css"
-    />
-    <button class="branding">Hello, Specificity!</button>
+    <main>
+      <div class="wrapper">
+        <article class="flow">
+          <h1>Matching specificity</h1>
+          <figure class="callout">
+            <p>
+              The second CSS rule wins because it gets an extra 1 point of
+              specificity.
+            </p>
+          </figure>
+          <button class="my-button" onclick="alert('hello')">Click me</button>
+        </article>
+      </div>
+    </main>
 
     <script src="myscript.js"></script>
   </body>
