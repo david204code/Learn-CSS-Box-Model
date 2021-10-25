@@ -1,7 +1,7 @@
-.my-button.my-button {
+.my-button {
   background: blue;
 }
 
-button[onclick] {
+[onclick] {
   background: grey;
 }
