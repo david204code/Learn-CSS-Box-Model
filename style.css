@@ -6,10 +6,11 @@ p {
   border: 1px solid;
 }
 
-/* Not all properties are accounted for anymore */
+/* All styles are now accounted for */
 aside p {
   margin: unset;
   color: unset;
+  all: unset;
 }
 
 /* Decorative styles */
