@@ -2,10 +2,17 @@
 p {
   margin-top: 2em;
   color: goldenrod;
+  padding: 2em;
+  border: 1px solid;
 }
 
-/* The p needs to be “reset” in asides, so you can use unset */
+/* Not all properties are accounted for anymore */
 aside p {
   margin: unset;
   color: unset;
+}
+
+/* Decorative styles */
+aside {
+  margin-top: 2em;
 }
