@@ -9,34 +9,22 @@
   </head>
 
   <body>
-    <main>
-      <div class="wrapper">
-        <article class="flow">
-          <h1>Controlling and utilising inheritance</h1>
-          <p>
-            The
-            <strong>bold elements inside a <code>&lt;strong&gt;</code></strong>
-            have a <code>font-weight</code> of <code>900</code> by default.
-          </p>
-          <div class="my-component">
-            <p>
-              This text is in a component called <code>.my-component</code>,
-              which has a <code>font-weight</code> of <code>500</code>.
-            </p>
-          </div>
-          <div class="my-component">
-            <p>
-              <strong
-                >This <code>&lt;strong&gt;</code> element is inside
-                <code>.my-component</code>. It inherits the
-                <code>500</code> weight because it’s <code>font-weight</code> is
-                set to <code>inherit</code>.</strong
-              >
-            </p>
-          </div>
-        </article>
-      </div>
-    </main>
+    <article>
+      <p>
+        <strong
+          >I am a strong element that is bold because that is the inherited user
+          agent style.</strong
+        >
+      </p>
+      <aside>
+        <p>
+          <strong
+            >I am a strong element but my font weight is normal because it is in
+            an aside element.</strong
+          >
+        </p>
+      </aside>
+    </article>
 
     <script src="myscript.js"></script>
   </body>
