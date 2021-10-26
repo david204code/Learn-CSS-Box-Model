@@ -12,30 +12,28 @@
     <main>
       <div class="wrapper">
         <article class="flow">
-          <h1>Inheritance cascades downwards</h1>
+          <h1>Controlling and utilising inheritance</h1>
           <p>
-            Properties that can be inherited cascade downwards, and child
-            elements will get a computed value which represents its parent’s
-            value. This means that if a parent has <code>font-weight</code> set
-            to <code>300</code>: all child elements will be light unless they
-            have <code>font-weight</code> set to a different value or the user
-            agent stylesheet has a value for <code>font-weight</code>, for that
-            element.
+            The
+            <strong>bold elements inside a <code>&lt;strong&gt;</code></strong>
+            have a <code>font-weight</code> of <code>900</code> by default.
           </p>
-          <p>
-            That is the case here. All text is <code>font-weight: 300</code>,
-            but <code>&lt;span&gt;</code> elements have a
-            <code>font-weight</code> of <code>700</code> which overrides the
-            inheritance.
-            <span
-              >This sentence is wrapped in a <code>&lt;span&gt;</code>, so the
-              text is bold weight</span
-            >.
-          </p>
-          <p>
-            Notice also how the inline code <em>also</em> inherits the bold
-            <code>font-weight</code>.
-          </p>
+          <div class="my-component">
+            <p>
+              This text is in a component called <code>.my-component</code>,
+              which has a <code>font-weight</code> of <code>500</code>.
+            </p>
+          </div>
+          <div class="my-component">
+            <p>
+              <strong
+                >This <code>&lt;strong&gt;</code> element is inside
+                <code>.my-component</code>. It inherits the
+                <code>500</code> weight because it’s <code>font-weight</code> is
+                set to <code>inherit</code>.</strong
+              >
+            </p>
+          </div>
         </article>
       </div>
     </main>

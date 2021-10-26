@@ -1,7 +1,17 @@
-article {
-  font-weight: 300;
+strong {
+  font-weight: 900;
 }
 
-span {
-  font-weight: 700;
+.my-component {
+  font-weight: 500;
+}
+
+.my-component strong {
+  font-weight: inherit;
+}
+
+/* System font stack to show the difference in weights */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
