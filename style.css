@@ -1,3 +1,11 @@
-aside strong {
-  font-weight: initial;
+/* Global color styles for paragraph in authored CSS */
+p {
+  margin-top: 2em;
+  color: goldenrod;
+}
+
+/* The p needs to be “reset” in asides, so you can use unset */
+aside p {
+  margin: unset;
+  color: unset;
 }
