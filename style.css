@@ -1,15 +1,7 @@
-html {
-  color: #141414;
+article {
+  font-weight: 300;
 }
 
-body {
-  font-size: 1.2em;
-}
-
-p {
-  font-style: italic;
-}
-
-article > * + * {
-  margin-top: 1em;
+span {
+  font-weight: 700;
 }
