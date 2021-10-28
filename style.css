@@ -1,19 +1,25 @@
-/* Global color styles for paragraph in authored CSS */
-p {
-  margin-top: 2em;
-  color: goldenrod;
-  padding: 2em;
+.swatch {
+  padding: 0.5rem;
   border: 1px solid;
 }
 
-/* All styles are now accounted for */
-aside p {
-  margin: unset;
-  color: unset;
-  all: unset;
+.swatch__sample {
+  height: 120px;
+  border: 1px solid;
+  margin-bottom: 1rem;
 }
 
-/* Decorative styles */
-aside {
-  margin-top: 2em;
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size, 12rem), 1fr)
+  );
+  gap: 1rem;
+  padding: 0;
+}
+
+li + li {
+  margin: 0;
+  list-style: none;
 }
